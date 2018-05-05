@@ -23,16 +23,15 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
 
-// Auth User
-
+// Auth
 const authRouter = require('./src/auth');
 app.use('/auth', authRouter);
 
 const usersRouter = require('./src/users');
 app.use('/users', auth.middlewareauth, auth.middlewareblock, usersRouter);
 
-const costumersRouter = require('./src/costumers');
-app.use('/costumers', auth.middlewareauth, costumersRouter);
+const customersRouter = require('./src/customers');
+app.use('/customers', auth.middlewareauth, customersRouter);
 
 app.listen(config.port, (err) => { console.log(`
     Successful server startup

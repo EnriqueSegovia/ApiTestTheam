@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-var Costumerschema = mongoose.Schema({
+var Customerschema = mongoose.Schema({
     name: {
       type: String,
       required: [true, 'Name is requiered.'],
@@ -28,6 +28,6 @@ var Costumerschema = mongoose.Schema({
     { versionKey: false }
 );
 
-var COSTOMER = mongoose.model('customers', Costumerschema);
+var COSTOMER = mongoose.model('customers', Customerschema);
 
 module.exports = COSTOMER;
