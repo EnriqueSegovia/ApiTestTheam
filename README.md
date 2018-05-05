@@ -84,29 +84,29 @@ PATCH /users/id
 
 • User Endpoints:
 
-  check the costumer.model file to see the schema
+  check the customer.model file to see the schema
 
--Create costumer: 
+-Create customer: 
 ```
-POST /costumers
-```
-
--Get Costumers: 
-```
-GET /costumers
+POST /customers
 ```
 
-Get CostumerByID: 
+-Get Customers: 
 ```
-GET /costumers/id
-```
-
-Delete CostumerByID: 
-```
-DELETE /costumers/id
+GET /customers
 ```
 
-Update CostumerByID: 
+Get CustomerByID: 
 ```
-PATCH /costumers/id
+GET /customers/id
+```
+
+Delete CustomerByID: 
+```
+DELETE /customers/id
+```
+
+Update CustomerByID: 
+```
+PATCH /customers/id
 ```
