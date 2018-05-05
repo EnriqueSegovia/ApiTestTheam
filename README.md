@@ -47,7 +47,12 @@ npm run dev
 
 ## Use the API
 
-First, to authenticate yourself you have to do a POST /auth/login with username and password that will generate a Json Web Token with the necessary information for the api to work(an administrator had to have added that user to the database previously), this token has to be introduced by the header. By default users do not have administrator permissions, only the administrator can create other administrators or change the permission from a user to an administrator.
+First, to authenticate yourself you have to do a 
+
+```
+POST /auth/login
+```
+ with username and password that will generate a Json Web Token with the necessary information for the api to work(an administrator had to have added that user to the database previously), this token has to be introduced by the header. By default users do not have administrator permissions, only the administrator can create other administrators or change the permission from a user to an administrator.
 
 In the apiUsers file of the repo, you will find an administrator and a user, with their respective passwords to do your tests or start ups.
 
